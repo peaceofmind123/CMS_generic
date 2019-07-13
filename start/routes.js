@@ -25,7 +25,9 @@ Route.get(
 // The posts route
 Route.get("/posts", "PostController.index");
 
-// The detailed post route
+// Add new post
+Route.get("/posts/add", "PostController.add");
+// The detailed post route : this must be below all routes posts/xyz otherwise xyz is gonna be parsed as id
 Route.get("/posts/:id", "PostController.details");
 // The home route
 Route.on("/").render("home");

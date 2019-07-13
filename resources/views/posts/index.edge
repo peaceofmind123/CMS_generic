@@ -5,5 +5,8 @@
         @each(post in posts)
     <li class="list-group-item"><a href="/posts/{{post.id}}" style="text-decoration:none">{{post.title}}</a></li>
         @endeach
+    <li class="list-group-item p-0 m-0"><a class="btn btn-success form-control" href="/posts/add">Create New Post</a></li>
     </ul>
+
+    
 @endsection
