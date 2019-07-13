@@ -24,5 +24,8 @@ Route.get(
 
 // The posts route
 Route.get("/posts", "PostController.index");
+
+// The detailed post route
+Route.get("/posts/:id", "PostController.details");
 // The home route
 Route.on("/").render("home");

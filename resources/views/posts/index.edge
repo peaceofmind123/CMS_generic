@@ -1,9 +1,9 @@
 @layout('main')
 @section('content')
     <h1>{{title}}</h1>
-    <ul>
+    <ul class="list-group">
         @each(post in posts)
-          <li style="list-style:none">{{post.title}}</li>
+    <li class="list-group-item"><a href="/posts/{{post.id}}" style="text-decoration:none">{{post.title}}</a></li>
         @endeach
     </ul>
 @endsection
